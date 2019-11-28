@@ -1,0 +1,141 @@
+body {
+    color: #efefef;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 1px 1px 15px #000000;
+    background: linear-gradient(rgba(17, 126, 112, 0.75), rgba(0, 88, 255, 0.45)), url(https://cdn.pixabay.com/photo/2018/04/14/16/29/cube-3319359_960_720.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 75%;
+}
+
+.overview {
+    padding: 3rem;
+}
+
+.fullname {
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: .5rem;
+}
+
+.job-title {
+    color: #ffc107;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .75rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+
+hr {
+    width: 5rem;
+    border: none;
+    height: 2px;
+    background-color: #00BCD4;
+    margin: 1.5rem;
+}
+
+.description {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.75;
+}
+
+.works {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.works h2 {
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+.works img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.social-media a {
+    color: #efefef;
+    margin: 0 .5rem;
+    font-size: 1.5rem;
+    opacity: .75;
+}
+
+.social-media a:hover {
+    opacity: 1;
+}
+
+.ad {
+    margin: .5rem;
+    font-size: 1rem;
+}
+
+.ad a {
+    color: #00BCD4;
+}
+
+.image-container {
+    width: 100%;
+    padding: 3rem;
+}
+
+.image-container img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+
+@media (max-width: 980px) {
+    .container {
+        flex-direction: column;
+    }
+    .image-container {
+        width: 100%;
+        padding: 3rem 0 0;
+    }
+    .overview {
+        order: 1;
+        padding: 3rem 0;
+    }
+    main {
+        background: linear-gradient(rgba(0, 255, 222, 0.45), rgba(0, 88, 255, 0.45)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdWa90QdFHziU6uh7akASo9fM3plgnGZq9grZTPUvqutxy28YR);
+    }
+    /* Center the following elements */
+    .fullname,
+    .job-title,
+    .description,
+    .ad,
+    .works,
+    .social-media {
+        text-align: center;
+    }
+    .job-title {
+        font-weight: bolder;
+    }
+    hr {
+        margin: auto;
+    }
+    .social-media {
+        margin-top: 3rem;
+    }
+}
